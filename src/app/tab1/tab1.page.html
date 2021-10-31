@@ -1,17 +1,30 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Videos App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar></ion-searchbar>
 
+  <ion-list>
+    <ion-item lines="full">
+      <ion-thumbnail item-start>
+        <img src="https://www.imdb.com/title/tt8400856/mediaviewer/rm834974465/?ref_=tt_ov_i">
+      </ion-thumbnail>
+
+      <ion-label>
+      <div>
+           <h1>The Grand Duke of Corsica</h1>
+           <p>2021 1h:33min</p>
+           <p>Action</p>
+    </div>
+  </ion-label>
+
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
